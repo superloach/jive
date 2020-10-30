@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jive/{{ .Name }}</title>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="/icon-64.png"/>
+
+		<script src="/jive.js"></script>
+	</head>
+	<body onload="setup()">
+		username: <input type="text" id="user" />
+		<input type="button" value="connect" onclick="connectbtn()" /><br />
+
+		message: <input type="text" id="msg" />
+		<input type="submit" value="send" onclick="sendbtn()" /><br />
+
+		<div id="log">
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jive</title>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="/icon-64.png"/>
+	</head>
+	<body>
+		<a href="/">
+			<img src="/logo-120.png" />
+		</a>
+
+		<h2>rooms</h2>
+
+		<ul>
+		{{ range .Rooms }}
+			<li>
+				<a href="/{{ .Name }}">/{{ .Name }}</a>
+			</li>
+		{{ end }}
+		</ul>
+
+		<a href="/">refresh</a>
+	</body>
+</html>
